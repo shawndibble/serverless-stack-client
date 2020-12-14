@@ -9,14 +9,6 @@ export function initSentry() {
 
   Sentry.init({
     dsn: "https://f3b0846706b742ab87da77a086d03d25@o60040.ingest.sentry.io/5557028",
-    autoSessionTracking: true,
-    integrations: [
-      new Integrations.BrowserTracing(),
-    ],
-
-    // We recommend adjusting this value in production, or using tracesSampler
-    // for finer control
-    tracesSampleRate: 1.0,
   });
 }
 
